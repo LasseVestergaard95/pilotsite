@@ -1,0 +1,44 @@
+/* Nulstilling af margin og padding på alle elementer, samt ændring af box model på alle elementer */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Normalisering af font og linjehøjde på dokumentets tekster, samt nedtoning af tekstfarven */
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    color: #2d2d2d;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  /* Normalisering af billeder */
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  #intro{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+  }
+
+  aside{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+  }
+
+  p, h1{
+    text-align: center;
+  }
+
+  video{
+    width: 70%;
+    height: auto;
+    display: block;
+  }
